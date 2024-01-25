@@ -1,0 +1,13 @@
+import pyshorteners
+
+url = input("Input your URL you want to shorten: ")
+
+s = pyshorteners.Shortener()
+
+tinyurl_shortened = s.tinyurl.short(url)
+print("TinyURL:", tinyurl_shortened)
+
+osdb_shortened = s.osdb.short(url)
+print("osdb:", osdb_shortened)
+
+input("Press Enter to exit")
